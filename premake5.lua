@@ -34,11 +34,11 @@ project "stb"
 	}
 
 	filter "configurations:Debug"
-	
+		optimize "Off"
+		symbols "On"
 		runtime "Debug"
-		symbols "on"
 
 	filter "configurations:Release"
-	
+		optimize "On"
+		symbols "Off"
 		runtime "Release"
-		optimize "on"
